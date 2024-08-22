@@ -6,8 +6,9 @@ const chokidar = require("chokidar");
 
 class Interpreter
 {
-    loadPython(dir)
+    loadPython()
     {
+        dir = "";
         const debug = process.env.NODECALLSPYTHON_DEBUG !== undefined;
         if (debug)
             console.log("Loading python from " + dir);
